@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "The next js app skeleton",
   "author": "lethDz",
-  "homepage": "",
   "license": "MIT",
   "main": "lib/next.js",
   "directories": {
@@ -31,5 +30,13 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.15"
   },
-  "private": true
+  "private": true,
+  "homepage": "https://github.com/LethDz/Next-JS-App-Skeleton#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LethDz/Next-JS-App-Skeleton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LethDz/Next-JS-App-Skeleton/issues"
+  }
 }
