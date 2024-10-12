@@ -14,11 +14,22 @@
     "lib"
   ],
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "test": "node ./__tests__/next.test.js"
   },
   "dependencies": {
     "next": "^14.2.15",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  }
+  },
+  "devDependencies": {
+    "@types/node": "22.7.5",
+    "@types/react": "18.3.11",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15"
+  },
+  "private": true
 }
