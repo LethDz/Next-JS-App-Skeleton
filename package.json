@@ -16,8 +16,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prettier": "prettier --write .",
     "lint": "next lint",
-    "test": "node ./__tests__/next.test.js"
+    "test": "echo \"No Test are performed\"",
+    "prepare": "husky"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "next": "^14.2.15",
@@ -28,7 +35,12 @@
     "@types/node": "22.7.5",
     "@types/react": "18.3.11",
     "eslint": "^8",
-    "eslint-config-next": "14.2.15"
+    "eslint-config-next": "14.2.15",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
   },
   "private": true,
   "homepage": "https://github.com/LethDz/Next-JS-App-Skeleton#readme",
