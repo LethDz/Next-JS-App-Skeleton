@@ -10,7 +10,7 @@ const nextConfig = {
     ignoreBuildErrors: false,
     tsconfigPath: 'tsconfig.json',
   },
-  basePath: '/src',
+  reactStrictMode: true,
 };
 
 module.exports = nextConfig;

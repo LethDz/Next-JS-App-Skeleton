@@ -1,22 +1,26 @@
 'use client';
+import { Button as CustomButton } from '@ds/common-components/dist';
+import { ButtonProps } from '@ds/common-components/dist/types/atoms/Button/Button';
 import '@ds/common-styles/dist/atoms/Button.css';
+import { ReactElement } from 'react';
 
-interface ButtonProps {
-  label: string;
-}
-
-const Button: React.FunctionComponent<ButtonProps> = ({ label }) => {
-  return (
-    <button
-      onClick={(e) => {
-        console.log(e.currentTarget.labels);
-      }}
-      type='button'
-      className='dse-button__container'
-    >
-      {label}
-    </button>
-  );
-};
+/**
+ * A basic button component.
+ *
+ * @remarks
+ * This component is a wrapper around the base component in the design system.
+ * It adds an onClick event handler that logs the event to the console.
+ *
+ * @param props - The props for the button.
+ * @returns A React element.
+ */
+const Button: React.FunctionComponent<ButtonProps> = (props: ButtonProps): ReactElement => (
+  <CustomButton
+    {...props}
+    onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+      console.log(e);
+    }}
+  ></CustomButton>
+);
 
 export default Button;
