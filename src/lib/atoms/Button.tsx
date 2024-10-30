@@ -1,6 +1,5 @@
 'use client';
-import { Button as CustomButton } from '@ds/common-components/dist';
-import { ButtonProps } from '@ds/common-components/dist/types/atoms/Button/Button';
+import { ButtonProps, Button as CustomButton } from '@ds/common-components';
 import '@ds/common-styles/dist/atoms/Button.css';
 import { ReactElement } from 'react';
 
