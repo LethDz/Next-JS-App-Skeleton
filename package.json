@@ -18,30 +18,41 @@
     "prettier": "prettier --write .",
     "lint": "next lint",
     "test": "echo \"No Test are performed\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "commit": "git cz"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
   },
   "dependencies": {
     "@ds/common-components": "file:../../packages/components",
     "@ds/common-styles": "file:../../packages/scss",
-    "next": "^14.2.15",
+    "next": "^15",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@types/node": "22.7.5",
     "@types/react": "18.3.11",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.15",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "9.14.0",
+    "eslint-config-next": "^15.0.3",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.4"
+    "typescript": "5.5.4"
   },
   "private": true,
   "homepage": "https://github.com/LethDz/Next-JS-App-Skeleton#readme",
